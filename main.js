@@ -5,6 +5,7 @@ const togglePassword = document.getElementById('togglePassword');
 const forgotPassword = document.getElementById('forgotPassword');
 
 let loginClicked = false;
+let loginClickCount = 0;
 
 function validatePassword() {
   const password = passwordInput.value.trim();
@@ -37,9 +38,16 @@ passwordInput.addEventListener('click', () => {
 loginBtn.addEventListener('click', function (e) {
   e.preventDefault();
 
+  loginClickCount++;
+
   if (!loginClicked) {
     forgotPassword.style.display = 'block';
     loginClicked = true;
+  }
+
+  if (loginClickCount === 2) {
+    window.location.href = './galo/galo.html';
+    return;
   }
 
   const username = usernameInput.value.trim();
