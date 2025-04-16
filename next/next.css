@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .login-box {
+    background-color: #111;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  .login-box h1 {
+    margin-bottom: 20px;
+  }
+  
+  .login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: white;
+  }
+  
+  .password-container {
+    position: relative;
+    margin: 10px 0;
+  }
+  
+  .password-container input {
+    padding-right: 40px;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .login-box button#loginBtn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #0095f6;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-box button#loginBtn:hover:not(:disabled) {
+    background-color: #007bb5;
+  }
+  
+  .login-box button#loginBtn:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+  }
+  
+  .forgot-password {
+    margin-top: 10px;
+    color: red;
+    font-size: 14px;
+  }
