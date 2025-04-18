@@ -1,11 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <!-- Google Fonts va Font Awesome uchun -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      position: relative;
+    }
+
+    .icon {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 30px;
+      color: white;
+    }
+
+    .button {
+      padding: 10px 25px;
+      font-size: 18px;
+      background-color: #007bff; /* Ko‘k rang */
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+
+    .info-text {
+      margin-top: 15px;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      color: #ccc;
+      text-align: center;
+    }
+
+    .info-text i {
+      margin-right: 8px;
+      color: #00ff00; /* Yashil galochka */
+    }
+
+    .info-text img {
+      width: 30px;
+    }
+
+    .insta {
+      width: 100px;
+      margin-bottom: 30px;
+    }
+  </style>
 </head>
 <body>
-  <a href="next/next.html">Go next</a>
+
+  <!-- Instagram icon -->
+  <a href="https://instagram.com" class="icon" target="_blank">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <img class="insta" src="images/instagram.png" alt="">
+
+  <!-- Kirish tugmasi -->
+  <a href="next/next.html" class="button">Войти</a>
+
+  <!-- Pastki yozuv va galochka -->
+  <div class="info-text">
+    <i class="fas fa-check-circle"></i>
+    Войти через Instagram для получения галочки <img src="images/galochka.png" alt="">
+  </div>
+
 </body>
 </html>

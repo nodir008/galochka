@@ -25,6 +25,9 @@
   
   .login-box h1 {
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .login-box input {
@@ -81,4 +84,8 @@
     margin-top: 10px;
     color: red;
     font-size: 14px;
+  }
+
+  .icon_insta {
+    width: 50px;
   }
